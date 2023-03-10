@@ -1,4 +1,4 @@
-# poop
+# Practice project
 
 ## Project setup
 ```
