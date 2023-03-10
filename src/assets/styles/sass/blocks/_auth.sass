@@ -1,0 +1,62 @@
+
+body
+  padding: 0px
+  margin: 0px
+  background-image: url(../src/assets/img/bg-poop.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+.form-wrapper
+  margin-top: 25%
+  transform: translateY(-50%)
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  .form-control
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    max-width: 280px
+    margin: 0 auto
+    background-color: rgba(darkgrey, 0.1)
+    padding: 15px 75px 25px 75px
+    border: 3px solid darkgrey
+    border-radius: 3px
+    transition: 0.3s
+    &:hover
+      background-color: rgba(darkgrey, 0.3)
+    .form-button
+      font-size: 20px
+      padding: 5px 20px 5px 20px
+      cursor: pointer
+      margin-top: 10px
+      margin-bottom: 5px
+      font-weight: 600
+      border: 2px solid #674845
+      border-radius: 2px
+      transition: 0.3s
+      color: #352623
+      &:hover
+        background-color: #674845
+        border: 2px solid #674845
+        color: white
+    .form-title
+      margin-top: 0px
+      font-size: 30px
+      color: white
+    .input-email,
+    .input-password
+      padding: 5px 10px 5px 10px
+      font-size: 20px
+      min-width: 260px
+      border: none
+      &:focus
+        outline: none
+    .input-email,
+    .input-password
+      margin-bottom: 15px
+    .form-auth-alr
+      transition: 0.3s
+      &:hover
+        color: grey
