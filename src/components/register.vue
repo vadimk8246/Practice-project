@@ -13,7 +13,7 @@
         class="input input-password" 
         placeholder="Ещё раз pASSword" 
         v-model="confirmPassword">
-      <button class="btn form-button">Регистрация</button>
+      <button class="btn form-button" :disabled="password.length < 6 || confirmPassword.length < 6 || email.length < 1">Регистрация</button>
       <router-link to="/auth" class="router-link"><span class="form-auth-alr">Уже есть аккаунт</span></router-link>
     </form>
   </div>

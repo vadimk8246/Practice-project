@@ -4,7 +4,7 @@
       <h2 class="form-title">Авторизация</h2>
       <input type="email" class="input input-email" placeholder="Email" v-model="email">
       <input type="password" class="input input-password" placeholder="Give me your pASSword" v-model="password">
-      <button class="btn form-button">Войти</button>
+      <button class="btn form-button" :disabled="password.length < 6 || email.length < 1">Войти</button>
       <router-link to="/register" class="router-link"><span class="form-auth-alr">Создать аккаунт</span></router-link>
     </form>
   </div>
